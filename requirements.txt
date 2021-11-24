@@ -1,1 +1,2 @@
 githubcontributions == 0.3.0
+pytz == 2021.3
