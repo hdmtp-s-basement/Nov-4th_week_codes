@@ -27,6 +27,8 @@ def sub_comment_stream():
         print(comment.body)
         print("=====")
         print(comment.author)
+        print("\n")
+        print(comment)
         print("\n\t---------------------\n\t")
 
 def sub_submission_stream():
@@ -37,6 +39,8 @@ def sub_submission_stream():
         print(submission.body)
         print("=====")
         print(submission.author)
+        print("\n")
+        print(submission)
         print("\n\t---------------------\n\t")
 
 
@@ -49,6 +53,8 @@ def sub_submissions_hot():
         print(submission.title)
         print("=====")
         print(submission.author)
+        print("\n")
+        print(submission)
         print("\n\t---------------------\n\t")
 
 def redditor_stream_comnts():
@@ -57,10 +63,14 @@ def redditor_stream_comnts():
         print("\n")
         print(comment.body)
         print("\n")
-
+        print(comment)
+        print("\n")
+        
 def redditor_stream_submissions():
     user = str(input("reddit username: "))
     for submission in reddit.redditor(user).stream.submissions():
         print("\n")
         print(submission.title)
+        print("\n")
+        print(submission)
         print("\n")
