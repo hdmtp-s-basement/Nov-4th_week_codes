@@ -40,7 +40,7 @@ def sub_submission_stream():
         print("\n\t---------------------\n\t")
 
 
-def sub_submissions():
+def sub_submissions_hot():
     sub = str(input("Enter subreddit name: "))
     subreddit = reddit.subreddit(sub)
     limit = int(input("Limit: "))
